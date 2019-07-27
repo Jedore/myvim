@@ -121,7 +121,6 @@
 ```shell
 Plugin 'altercation/vim-colors-solarized.git'
 ```
-*_vimrc*
 ```shell
 colorscheme solarized
 set bg=dark
@@ -131,7 +130,6 @@ set bg=dark
 ```shell
 Plugin 'plasticboy/vim-markdown'`
 ```
-*_vimrc*
 ```shell
 " for markdown file format
 autocmd FileType markdown setlocal tabstop=4
@@ -143,7 +141,6 @@ set conceallevel=2
 ```shell
 Plugin 'vim-airline/vim-airline'
 ```
-*_vimrc*
 ```shell
 " for status line
 let g:airline#extensions#tabline#enabled = 1
@@ -162,4 +159,13 @@ Plugin 'rkulla/pydiction'
 ### Sinify
 ```
 Plugin 'mhinz/vim-signify'
+```
+
+### Correcting spelling mistakes on the fly
+[reference](https://castel.dev/post/lecture-notes-1/)
+```shell
+" for spelling
+setlocal spell
+set spelllang=en_gb
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 ```
